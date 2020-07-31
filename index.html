@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Fire Doom</title>
+</head>
+
+<body>
+    <div class="root">
+        <div class="content">
+            <section>
+                <div id="fireCanvas"></div>
+                <div class="margin">
+                    <button onclick="decreaseFireSource()">-</button>
+                    <button onclick="destroyFireSource()">Min Fire</button>
+                    <button onclick="createFireSource()">Max Fire</button>
+                    <button onclick="increaseFireSource()">+</button>
+                </div>
+                <div class="margin">
+                    <button class="in_btn" onclick="toggleDebugMode()">Toggle Debug Mode</button>
+                </div>
+                <div class="margin">
+                    <span>Change de wind!</span>
+                </div>
+                <div class="margin">
+                    <button onclick="changeWindDirection(0)"></button>
+                    <button onclick="changeWindDirection(1)"> No wind </button>
+                    <button onclick="changeWindDirection(2)">></button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
